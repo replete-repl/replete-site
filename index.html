@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClojureScript REPL for iOS & Android</title>
+    <style>
+      html,
+      body {
+        min-height: 100%;
+        height: 100%;
+      }
+      body {
+        font-family: medium-content-sans-serif-font, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+          "Open Sans", "Helvetica Neue", sans-serif;
+        letter-spacing: 0;
+        font-weight: 400;
+        font-style: normal;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -moz-font-feature-settings: "liga" on;
+        color: rgba(0, 0, 0, 0.84);
+        font-size: 20px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        max-width: 800px;
+        margin: 16px auto 0;
+        padding: 16px 0;
+        display: flex;
+        align-items: center;
+      }
+      main {
+        max-width: 800px;
+        margin: 48px auto 0;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex: 1;
+      }
+      .icon {
+        display: block;
+        width: 76px;
+        height: 76px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 17px;
+        margin: 0 32px 0 0;
+      }
+      h1 {
+        font-weight: 400;
+        font-size: 32px;
+        margin: 0;
+      }
+      h3 {
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+      }
+      .platform {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .platform:first-child {
+        margin: 0 32px 0 0;
+      }
+      .device {
+        display: block;
+        width: 204px;
+        margin: 0 0 24px;
+      }
+      a.img {
+        display: inline-block;
+      }
+      a img {
+        margin: 0;
+        padding: 0;
+      }
+      footer,
+      a {
+        font-size: 13px;
+        color: #000;
+      }
+      footer {
+        text-align: center;
+        padding: 8px 0;
+      }
+      small {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="replete_icon.png" alt="" class="icon" />
+      <div>
+        <h1>Replete</h1>
+        <h3>ClojureScript REPL for iOS &amp; Android</h3>
+      </div>
+    </header>
+    <main>
+      <div class="platform">
+        <img src="replete_ios.png" alt="" class="device" />
+        <a
+          href="https://itunes.apple.com/us/app/replete/id1013465639?ls=1&mt=8"
+          class="img"
+          ><img src="app_store.svg" alt=""
+        /></a>
+      </div>
+      <div class="platform">
+        <img src="android_placeholder.svg" alt="" class="device" />
+        <small>Android is coming soon</small>
+      </div>
+    </main>
+    <footer>
+      Contribute on <a href="https://github.com/replete-repl">GitHub</a>
+    </footer>
+  </body>
+</html>
