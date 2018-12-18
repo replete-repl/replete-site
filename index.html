@@ -49,7 +49,7 @@
         width: 76px;
         height: 76px;
         box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
-        border-radius: 17px;
+        border-radius: 13px;
         margin: 0 32px 0 0;
       }
       h1 {
@@ -96,11 +96,26 @@
       small {
         font-size: 12px;
       }
+      @media (max-width: 460px) {
+	header {
+	  margin: 0;
+	}
+	main {
+	  flex-direction: column;
+          margin-top: 0;
+	}
+      	.device {
+	  display: none;
+	}
+	.platform:first-child {
+	  margin: 0 0 32px;
+	}
+      }
     </style>
   </head>
   <body>
     <header>
-      <img src="replete_icon.png" alt="" class="icon" />
+      <img src="replete_icon.svg" alt="" class="icon" />
       <div>
         <h1>Replete</h1>
         <h3>ClojureScript REPL for iOS &amp; Android</h3>
