@@ -36,7 +36,7 @@ Additionally, filesystem facilities like `file`, `delete-file`, and `file-attrib
 
 ### replete.http
 
-([Online docs](replte-http.html))
+([Online docs](replete-http.html))
 
 This namespace provides facilities for interacting with HTTP servers. For example:
 
