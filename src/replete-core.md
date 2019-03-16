@@ -13,7 +13,6 @@ _Protocols_
 
 _Vars_
 
-[\*command-line-args\*](#command-line-args)<br/>
 [\*err\*](#err)<br/>
 [\*in\*](#in)<br/>
 [eval](#eval)<br/>
@@ -27,14 +26,12 @@ _Vars_
 [ns-resolve](#ns-resolve)<br/>
 [read](#read)<br/>
 [read-line](#read-line)<br/>
-[read-password](#read-password)<br/>
 [read-string](#read-string)<br/>
 [requiring-resolve](#requiring-resolve)<br/>
 [resolve](#resolve)<br/>
 [sleep](#sleep)<br/>
 [slurp](#slurp)<br/>
 [spit](#spit)<br/>
-[with-in-str](#with-in-str)<br/>
 [with-open](#with-open)<br/>
 
 ## Protocols
@@ -101,10 +98,6 @@ _Protocol_
   Returns available characters as a string or `nil` if EOF.
 
 ## Vars
-
-### <a name="command-line-args"></a>\*command-line-args\*
-
-A sequence of the supplied command line arguments, or `nil` if none were supplied
 
 ### <a name="err"></a>\*err\*
 
@@ -230,16 +223,6 @@ Spec<br/>
 Spec<br/>
  _args_: `(cat )`<br/>
  _ret_: `string?`<br/>
-
-### <a name="read-password"></a>read-password
-`([] [prompt])`
-
-  Reads the next line from console with echoing disabled.
-  It will print out a prompt if supplied
-
-Spec<br/>
- _args_: `(cat :prompt (? string?))`<br/>
- _ret_: `string?`<br/>
  
 ### <a name="read-string"></a>read-string
 `([s] [opts s])`
@@ -299,14 +282,6 @@ Spec<br/>
 
 Spec<br/>
  `args`: `(cat :f (or :string string? :file file?) :content any? :opts (* any?))`
-
-### <a name="with-in-str"></a>with-in-str
-`([s & body])`
-
-_Macro_
-
-  Evaluates body in a context in which [`*in*`](#in) is bound to a fresh
-  string reader initialized with the string `s`.
   
 ### <a name="with-open"></a>with-open
 `([bindings & body])`

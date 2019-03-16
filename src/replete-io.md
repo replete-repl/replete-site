@@ -21,12 +21,9 @@ _Vars_
 [copy](#copy)<br/>
 [delete-file](#delete-file)<br/>
 [directory?](#directory?)<br/>
-[exists?](#exists?)<br/>
 [file](#file)<br/>
 [file?](#file?)<br/>
 [file-attributes](#file-attributes)<br/>
-[file-name](#file-name)<br/>
-[hidden-file?](#hidden-file?)<br/>
 [input-stream](#input-stream)<br/>
 [list-files](#list-files)<br/>
 [make-input-stream](#make-input-stream)<br/>
@@ -35,11 +32,8 @@ _Vars_
 [make-reader](#make-reader)<br/>
 [make-writer](#make-writer)<br/>
 [output-stream](#output-stream)<br/>
-[path-elements](#path-elements)<br/>
 [reader](#reader)<br/>
-[regular-file?](#regular-file?)<br/>
 [resource](#resource)<br/>
-[symbolic-link?](#symbolic-link?)<br/>
 [writer](#writer)<br/>
    
 ## Protocols
@@ -153,15 +147,6 @@ Spec<br/>
  _args_: `(cat :dir (or :string string? :file file?))`<br/>
  _ret_: `boolean?`<br/>
 
-### <a name="exists?"></a>exists?
-`([f])`
-
-Checks if `f` exists on disk.
-
-Spec<br/>
- _args_: `(cat :f (or :string string? :file file?))`<br/>
- _ret_: `boolean?`<br/>
-
 ### <a name="file"></a>file
 `([arg] [parent child] [parent child & more])`
 
@@ -189,24 +174,6 @@ Returns a map containing the attributes of the item at a given `path`.
 Spec
  _args_: `(cat :path (nillable? (or :string string? :file file?)))`<br/>
  _ret_: `map?`
-  
-### <a name="file-name"></a>file-name
-`([x])`
-
-Returns the name (the final path element) of `x`.
-
-Spec<br/>
- _args_: `(cat :x (or :string string? :file file?))`<br/>
- _ret_: `string?`<br/>
-
-### <a name="hidden-file?"></a>hidden-file?
-`([x])`
-
-Checks if `x` is hidden (name begins with a '.' character).
-
-Spec<br/>
- _args_: `(cat :x (or :string string? :file file?))`<br/>
- _ret_: `boolean?`<br/>
 
 ### <a name="input-stream"></a>input-stream
 `([x & opts])`
@@ -257,49 +224,19 @@ Creates an `IWriter`. See also [`IOFactory`](#IOFactory) docs.
 
 Attempts to coerce its argument into an open [`IOutputStream`](replete-core.html#IOutputStream).
 
-### <a name="path-elements"></a>path-elements
-`([x])`
-
-Returns the path elements of `x` as a sequence.
-
-Spec<br/>
- _args_: `(cat :x (or :string string? :file file?))`<br/>
- _ret_: `(s/coll-of string?)`<br/>
-
-
 ### <a name="reader"></a>reader
 `([x & opts])`
 
 Attempts to coerce its argument into an open [`IPushbackReader`](replete-core.html#IPushbackReader).
 
-### <a name="regular-file?"></a>regular-file?
-`([f])`
-
-Checks if `f` is a regular file.
-
-Spec<br/>
- _args_: `(cat :f (or :string string? :file file?))`<br/>
- _ret_: `boolean?`<br/>
-
 ### <a name="resource"></a>resource
 `([n])`
 
 Returns the URI for the named resource, `n`.
-  
-The resource must be either a JAR resource, a file resource or a "bundled" resource. JARs and files are expressed relative to the classpath while "bundled" resources are the namespaces bundled with Replete and are referred to by reference to the file that contains the namespace, eg. `cljs.test` is `"cljs/test.cljs"`.
 
 Spec<br/>
  _args_: `(cat :n (nilable string?))`<br/>
  _ret_: `(nilable (instance? Uri %))`<br/>
-
-### <a name="symbolic-link?"></a>symbolic-link?
-`([f])`
-
-Checks if `f` is a symbolic link.
-
-Spec<br/>
- _args_: `(cat :f (or :string string? :file file?))`<br/>
- _ret_: `boolean?`<br/>
 
 ### <a name="writer"></a>writer
 `([x & opts])`
