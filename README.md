@@ -1,5 +1,11 @@
 # replete-site
 
-Replete product landing page
+Replete product landing page.
 
-https://replete.surge.sh/
+http://replete-repl.org
+
+## Building
+
+`script/build`
+
+Then view content by opening `target/public/index.html`.
