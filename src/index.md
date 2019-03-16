@@ -5,18 +5,23 @@
 
 Replete is a ClojureScript REPL for iOS and Android.
 
-<img src="img/replete_ios.png" style="margin: 20; height:400; max-width: 95%;"/>
-
 Read the [Replete User Guide](guide.html) or browse the [Replete SDK](sdk.html).
 
 Replete is free and [open source](https://github.com/replete-repl/).
 
-<a href="https://itunes.apple.com/us/app/replete/id1013465639?ls=1&mt=8">
+<main style="max-width: 800px; margin: 5px auto 0; display:flex; align-items: flex-start; justify-content:center; flex:1; flex-wrap: wrap">
+<div style="display:flex; text-align:center; flex-direction:column; align-items:center; justify-content:center">
+<img src="img/replete_ios.png" style="margin: 20; height:400"/>
+<a href="https://itunes.apple.com/us/app/replete/id1013465639?ls=1&mt=8" style="margin: 20">
   <img alt="Download on the App Store" src="img/app_store.svg" width="130">
 </a>
-&nbsp;&nbsp;&nbsp;
-<a href='https://play.google.com/store/apps/details?id=com.fikesfarm.Replete'>
+</div>
+
+<div style="display:flex; text-align:center; flex-direction:column; align-items:center; justify-content:center">
+<img src="img/replete_android.png" style="margin: 20; height:400"/>
+
+<a href="https://play.google.com/store/apps/details?id=com.fikesfarm.Replete">
   <img alt='Get it on Google Play' src='img/google_play.png' width="150/>
 </a>
-
-
+</div>
+</main>
