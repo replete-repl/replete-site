@@ -7,7 +7,7 @@ Replete starts off with `cljs.user` as the _current namespace_.
 
 > In ClojureScript, `def` and derived forms create vars in the current namespace. In addition, unqualified non-local symbols are resolved to vars in the current namespace.
 
-You can enter forms to be evaluated in the text box. When you tap the "Eval" button, the form, and any printed output, and the value of the evaluated form will be displayed above the text box.
+You can enter forms to be evaluated in the text box. When you tap the "Eval" button (or hit ⌘-Enter on macOS), the form, and any printed output, and the value of the evaluated form will be displayed above the text box.
 
 
 Try evaluating `(+ 1 2)` and `3` will be displayed. Or, try `(println "Hi")` and `Hi` will be displayed followed by `nil` (the value of the `println` call).
@@ -24,7 +24,9 @@ When entering forms, closing delimiters will be automatically entered and manage
 
 #### History
 
-You can copy any previously entered form, output, or result by long pressing on the row containing the item to be copied.
+On Replete iOS or Replete Android, you can copy any previously entered form, output, or result by long pressing on the row containing the item to be copied.
+
+On Replete macOS, ⌘-Up Arrow and ⌘-Down Arrow allow you to move through history.
 
 ### Result Display
 
