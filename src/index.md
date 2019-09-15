@@ -3,11 +3,18 @@
 
 # Replete
 
-Replete is a ClojureScript REPL for iOS, macOS, and Android.
+Replete is a ClojureScript REPL for iOS, macOS, Android, and the web.
 
 Read the [Replete User Guide](guide.html) or browse the [Replete SDK](sdk.html).
 
 Replete is free and [open source](https://github.com/replete-repl/).
+
+<div style="display:flex; text-align:center; flex-direction:column; align-items:center; justify-content:center; margin-top: 20; margin-bottom: 30;">
+<a href="https://repl.replete-web.io">
+<img src="img/replete_web.png" style="height:380; margin-bottom:-10;">
+<img alt="Try It Online" src="img/replete_web.svg" width="150">
+</a>
+</div>
 
 <main style="max-width: 800px; margin: 5px auto 0; display:flex; align-items: flex-start; justify-content:center; flex:1; flex-wrap: wrap">
 
