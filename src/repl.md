@@ -1,7 +1,7 @@
 ## REPL
 
 <img width="130" align="right" style="margin: 0ex 1em" src="img/repl.jpg">
-When launched, Replete will enter an interactive Read-Eval-Print Loop, or _REPL_.
+When launched, Replete REPL will enter an interactive Read-Eval-Print Loop, or _REPL_.
 
 Replete starts off with `cljs.user` as the _current namespace_. 
 
@@ -24,9 +24,9 @@ When entering forms, closing delimiters will be automatically entered and manage
 
 #### History
 
-On Replete iOS or Replete Android, you can copy any previously entered form, output, or result by long pressing on the row containing the item to be copied.
+On Replete REPL iOS or Replete REPL Android, you can copy any previously entered form, output, or result by long pressing on the row containing the item to be copied.
 
-On Replete macOS, ⌘-Up Arrow and ⌘-Down Arrow allow you to move through history.
+On Replete REPL macOS, ⌘-Up Arrow and ⌘-Down Arrow allow you to move through history.
 
 ### Result Display
 
@@ -38,14 +38,14 @@ REPL specials are, in essence, special forms that exist only in the REPL. (They 
 
 #### in-ns 
 
-Replete supports `in-ns`, which will switch you to a new namespace, creating it if it doesn't already exist.
+Replete REPL supports `in-ns`, which will switch you to a new namespace, creating it if it doesn't already exist.
 
 ```clojure-repl
 (in-ns 'bar.core)
 nil
 ```
 
-As in Clojure, Replete's `in-ns` REPL special accepts any expression, so long as it evaluates to a symbol, so you can do something like this
+As in Clojure, Replete REPL's `in-ns` REPL special accepts any expression, so long as it evaluates to a symbol, so you can do something like this
 
 ```clojure-repl
 (def my-ns 'foo.core)

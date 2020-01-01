@@ -1,6 +1,6 @@
-# Replete SDK
+# Replete REPL SDK
 
-Replete includes several namespaces adhering fairly closely to existing 
+Replete REPL includes several namespaces adhering fairly closely to existing 
 Clojure / ClojureScript analogs. An overview is presented in the 
 [Replete Namespaces](replete-namespaces.html) portion of the guide and
 full documentation is enumerated in the sections here:
@@ -9,4 +9,4 @@ full documentation is enumerated in the sections here:
 * [replete.io](replete-io.html)
 * [replete.http](replete-http.html)
 
-Additionally, Replete bundles [most of the Google Closure Library](gcl.html).
+Additionally, Replete REPL bundles [most of the Google Closure Library](gcl.html).

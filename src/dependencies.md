@@ -1,7 +1,7 @@
 ## Dependencies
 
 <img width="100" align="right" style="margin: 0ex 1em" src="img/dependencies.jpg">
-Source executed via Replete can depend on other bootstrapped-compatible libraries. To do so, the library must be bundled in Replete. (There is no facility to download dependencies into Replete.)
+Source executed via Replete REPL can depend on other bootstrapped-compatible libraries. To do so, the library must be bundled in Replete. (There is no facility to download dependencies into Replete.)
 
 ### Bundled Deps
 
@@ -16,7 +16,7 @@ Replete ships with many of the deps that are available to conventional ClojureSc
 * `clojure.walk`
 * `clojure.zip`
 
-In addition, Replete ships with these libraries:
+In addition, Replete REPL ships with these libraries:
 
 * [Fipp](https://github.com/brandonbloom/fipp) 0.6.14
 * [transit-cljs](https://github.com/cognitect/transit-cljs) 0.8.248
