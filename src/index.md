@@ -1,13 +1,13 @@
 <img src="img/replete_icon.svg" 
   style="display:block; width: 76px; height: 76px; box-shadow: 0 2px 16px rgba(0,0,0,0.1); border-radius: 13px;"/>
 
-# Replete
+# Replete REPL
 
-Replete is a ClojureScript REPL for iOS, macOS, Android, and the web.
+Replete REPL is a ClojureScript REPL for iOS, macOS, Android, and the web.
 
-Read the [Replete User Guide](guide.html) or browse the [Replete SDK](sdk.html).
+Read the [Replete REPL User Guide](guide.html) or browse the [Replete REPL SDK](sdk.html).
 
-Replete is free and [open source](https://github.com/replete-repl/).
+Replete REPL is free and [open source](https://github.com/replete-repl/).
 
 <div style="display:flex; text-align:center; flex-direction:column; align-items:center; justify-content:center; margin-top: 20; margin-bottom: 30;">
 <a href="https://repl.replete-web.io">

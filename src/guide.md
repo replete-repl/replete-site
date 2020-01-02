@@ -1,4 +1,4 @@
-# Replete User Guide
+# Replete REPL User Guide
 
 ## Single Page
 
