@@ -10,7 +10,7 @@ Read the [Replete REPL User Guide](guide.html) or browse the [Replete REPL SDK](
 Replete REPL is free and [open source](https://github.com/replete-repl/).
 
 <div style="display:flex; text-align:center; flex-direction:column; align-items:center; justify-content:center; margin-top: 20; margin-bottom: 30;">
-<a href="https://repl.replete-web.io">
+<a href="https://replete-repl.org/repl/">
 <img src="img/replete_web.png" style="height:380; margin-bottom:-10;">
 <img alt="Try It Online" src="img/replete_web.svg" width="150">
 </a>
